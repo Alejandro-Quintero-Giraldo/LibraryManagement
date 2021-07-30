@@ -1,6 +1,6 @@
 package co.com.library.management.dto;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class ResourcesDTO {
 
@@ -8,7 +8,7 @@ public class ResourcesDTO {
     private String name;
     private String type;
     private String theme;
-    private LocalDate date;
+    private LocalDateTime date;
     private Boolean isAvailable;
     private String uid;
 
@@ -47,11 +47,11 @@ public class ResourcesDTO {
         this.theme = theme;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

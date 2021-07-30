@@ -3,7 +3,7 @@ package co.com.library.management.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Document(collection = "User")
 public class User {
@@ -14,7 +14,7 @@ public class User {
 
     private String idResource;
     private String nameResource;
-    private LocalDate dateResource;
+    private LocalDateTime dateResource;
 
     public String getId() {
         return id;
@@ -48,11 +48,11 @@ public class User {
         this.nameResource = nameResource;
     }
 
-    public LocalDate getDateResource() {
+    public LocalDateTime getDateResource() {
         return dateResource;
     }
 
-    public void setDateResource(LocalDate dateResource) {
+    public void setDateResource(LocalDateTime dateResource) {
         this.dateResource = dateResource;
     }
 }

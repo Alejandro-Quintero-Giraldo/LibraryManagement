@@ -3,7 +3,7 @@ package co.com.library.management.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Document(collection = "Resources")
 public class Resources {
@@ -15,15 +15,15 @@ public class Resources {
 
     private String type;
     private String theme;
-    private LocalDate date;
+    private LocalDateTime date;
     private Boolean isAvailable;
     private String uid;
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

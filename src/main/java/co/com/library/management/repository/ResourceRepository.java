@@ -9,4 +9,6 @@ public interface ResourceRepository extends MongoRepository<Resources, String> {
     Iterable<Resources> findByType(String type);
 
     Iterable<Resources> findByTheme(String theme);
+
+    Iterable<Resources> findByName(String name);
 }

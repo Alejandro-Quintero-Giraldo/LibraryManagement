@@ -56,9 +56,9 @@ public class ResourceController {
         return new ResponseEntity(resourceService.findByTheme(theme), HttpStatus.OK);
     }
 
-    @GetMapping("/checkAvailability/{id}")
-    public ResponseEntity<String> checkAvailability(@PathVariable("id") String id){
-        return  new ResponseEntity(resourceService.checkAvailability(id), HttpStatus.OK);
+    @GetMapping("/checkAvailability/{name}")
+    public ResponseEntity<String> checkAvailability(@PathVariable("name") String name){
+        return  new ResponseEntity(resourceService.checkAvailability(name), HttpStatus.OK);
     }
 
     @GetMapping("/realizeLoan/{id}/{uid}")
