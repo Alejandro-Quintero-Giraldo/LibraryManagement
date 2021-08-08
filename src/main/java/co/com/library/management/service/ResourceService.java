@@ -73,7 +73,7 @@ public class ResourceService {
             if(resources.getAvailable() == Boolean.TRUE){
                 String idResource = resources.getId();
 
-                return " resources. The resource is available with the id "+idResource;
+                return "The resource is available with the id "+idResource;
             }
         }
 

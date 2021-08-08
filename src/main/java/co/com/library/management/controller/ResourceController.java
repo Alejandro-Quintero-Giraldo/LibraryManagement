@@ -28,7 +28,7 @@ public class ResourceController {
 
     @PostMapping("/createResource")
     public ResponseEntity<ResourcesDTO> createResource(@RequestBody ResourcesDTO resourcesDTO){
-        return new ResponseEntity(resourceService.createResource(resourcesDTO), HttpStatus.OK);
+        return new ResponseEntity(resourceService.createResource(resourcesDTO), HttpStatus.CREATED);
     }
 
     @PutMapping("/updateResource")
